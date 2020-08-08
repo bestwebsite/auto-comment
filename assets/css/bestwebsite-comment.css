@@ -1,0 +1,93 @@
+
+.postmatic-bestwebsite {
+    width: 45%;
+    float: right;
+    border: 1px solid #eee;
+    margin: 0 0 10px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.postmatic-bestwebsite-comment {
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+}
+
+.postmatic-bestwebsite-comment:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 20px;
+  color: #eee;
+  font-size: 3em;
+}
+.postmatic-bestwebsite-comment::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  float:right;
+  position: relative;
+  top: -15px;
+  color: #eee;
+  font-size: 3em;
+}
+
+.postmatic-bestwebsite-comment p {
+    display: inline;
+    font-style: italic;
+    font-size: 90%;
+}
+
+.postmatic-bestwebsite-comment p:nth-child(2),.postmatic-bestwebsite-comment p:nth-child(3),.postmatic-bestwebsite-comment p:nth-child(4) {
+    display: block;
+    margin-top: 15px;
+}
+
+.postmatic-bestwebsite-author {
+    font-size: 125%;
+}
+
+.postmatic-bestwebsite-avatar {
+    margin-left: 25px;
+}
+
+.postmatic-bestwebsite-avatar img {
+    float: left;
+     -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;   
+    width: 48px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) { 
+    
+.postmatic-bestwebsite {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+    
+}
+}
+/*styles for postmatic*/
+
+.postmatic-content .postmatic-bestwebsite {
+    font-size: 13px;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 480px) {
+			.postmatic-content .postmatic-bestwebsite {
+			  width: 90% !important;
+			  display: block !important;
+              margin: 25px auto !important;
+              float: none !important;
+			}
+}
